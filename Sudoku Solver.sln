@@ -5,22 +5,45 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sudoku Solver", "Sudoku Solver\Sudoku Solver.vcxproj", "{F4FF1107-BF7B-4E04-BE34-9A9EEDF60540}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku Solver App", "Sudoku Solver App\Sudoku Solver App.csproj", "{1E21D2F7-DB7E-402F-BE14-042B8E4C747F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "License", "License", "{2080809A-FF2E-4068-9B00-F40C6D59CFFF}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.txt = LICENSE.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4FF1107-BF7B-4E04-BE34-9A9EEDF60540}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{F4FF1107-BF7B-4E04-BE34-9A9EEDF60540}.Debug|x64.ActiveCfg = Debug|x64
 		{F4FF1107-BF7B-4E04-BE34-9A9EEDF60540}.Debug|x64.Build.0 = Debug|x64
 		{F4FF1107-BF7B-4E04-BE34-9A9EEDF60540}.Debug|x86.ActiveCfg = Debug|Win32
 		{F4FF1107-BF7B-4E04-BE34-9A9EEDF60540}.Debug|x86.Build.0 = Debug|Win32
+		{F4FF1107-BF7B-4E04-BE34-9A9EEDF60540}.Release|Any CPU.ActiveCfg = Release|Win32
 		{F4FF1107-BF7B-4E04-BE34-9A9EEDF60540}.Release|x64.ActiveCfg = Release|x64
 		{F4FF1107-BF7B-4E04-BE34-9A9EEDF60540}.Release|x64.Build.0 = Release|x64
 		{F4FF1107-BF7B-4E04-BE34-9A9EEDF60540}.Release|x86.ActiveCfg = Release|Win32
 		{F4FF1107-BF7B-4E04-BE34-9A9EEDF60540}.Release|x86.Build.0 = Release|Win32
+		{1E21D2F7-DB7E-402F-BE14-042B8E4C747F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E21D2F7-DB7E-402F-BE14-042B8E4C747F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E21D2F7-DB7E-402F-BE14-042B8E4C747F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1E21D2F7-DB7E-402F-BE14-042B8E4C747F}.Debug|x64.Build.0 = Debug|Any CPU
+		{1E21D2F7-DB7E-402F-BE14-042B8E4C747F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1E21D2F7-DB7E-402F-BE14-042B8E4C747F}.Debug|x86.Build.0 = Debug|Any CPU
+		{1E21D2F7-DB7E-402F-BE14-042B8E4C747F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E21D2F7-DB7E-402F-BE14-042B8E4C747F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E21D2F7-DB7E-402F-BE14-042B8E4C747F}.Release|x64.ActiveCfg = Release|Any CPU
+		{1E21D2F7-DB7E-402F-BE14-042B8E4C747F}.Release|x64.Build.0 = Release|Any CPU
+		{1E21D2F7-DB7E-402F-BE14-042B8E4C747F}.Release|x86.ActiveCfg = Release|Any CPU
+		{1E21D2F7-DB7E-402F-BE14-042B8E4C747F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
