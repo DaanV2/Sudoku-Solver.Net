@@ -1,31 +1,35 @@
 #pragma once
 
-#ifndef SudokuSolver_Cell_Class_Included
-#define SudokuSolver_Cell_Class_Included
+#ifndef SudokuSolver_GridCellCollection_Class_Included
+#define SudokuSolver_GridCellCollection_Class_Included
+
+#include "stdafx.h"
 #include "GridCell.h"
 
 namespace SudokuSolver
 {
 	public ref class GridCellCollection
 	{
-		array<GridCell^, 2>^ hCells;
+	private:
+		array<GridCell^> ^ hItems;
 
 	public:
+		//TODO add description
 		GridCellCollection();
 
 		//TODO add description
-		property array<GridCell^, 2>^ Cells
-		{
-			array<GridCell^, 2>^ get() { return this->hCells; }
-			void set(array<GridCell^, 2>^ value) { this->hCells = value; }
-		}
+		Property(array<GridCell^>^, hItems, Item)
 
-		GridCell^ operator()(int X, int Y)
+		//TODO add description
+		property size_t Count
 		{
-			return this->hCells[X, Y];
+#ifdef ENVIRONMENT32
+			size_t get() { return (size_t)this->hItems->GetLength(0); }
+#else
+			size_t get() { return (size_t)this->hItems->GetLongLength(0); }
+#endif
 		}
 	};
 }
 
-#endif // !SudokuSolver_Cell_Class_Included
-
+#endif //!SudokuSolver_GridCellCollection_Class_Included

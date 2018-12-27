@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Sudoku_Solver_App
+namespace SudokuSolver
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

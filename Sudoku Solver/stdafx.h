@@ -3,6 +3,8 @@
 #ifndef Stdafxh_Included
 #define Stdafxh_Included
 
+#include "stdEnviroment.h"
+
 #define Property($Type, $Variable, $Name) property $Type $Name { \
 	$Type get() { return this->$Variable; }\
 	void set($Type value) { this->$Variable = value; } };
@@ -13,5 +15,13 @@
 
 #define Property_ReadOnly($Type, $Variable, $Name) property $Type $Name { \
 	$Type get() { return this->$Variable; } } };
+
+namespace SudokuSolver
+{
+
+	//TODO add description
+	generic <typename T>
+	delegate void ValueChangedEventHandler(T sender);
+}
 
 #endif // !Stdafxh_Included

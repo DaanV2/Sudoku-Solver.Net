@@ -128,22 +128,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="BaseValues.h" />
-    <ClInclude Include="CanValues.h" />
-    <ClInclude Include="Determine.h" />
-    <ClInclude Include="Cell.h" />
-    <ClInclude Include="GridItem.h" />
+    <ClInclude Include="GridCell.h" />
+    <ClInclude Include="GridCellCollection.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="stdEnviroment.h" />
     <ClInclude Include="SudokuGrid.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
-    <ClCompile Include="BaseValues.cpp" />
-    <ClCompile Include="CanValues.cpp" />
-    <ClCompile Include="Determine.cpp" />
-    <ClCompile Include="Cell.cpp" />
-    <ClCompile Include="GridItem.cpp" />
+    <ClCompile Include="GridCell.cpp" />
+    <ClCompile Include="GridCellCollection.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

@@ -5,6 +5,5 @@ namespace SudokuSolver
 {
 	GridCellCollection::GridCellCollection()
 	{
-
 	}
 }
