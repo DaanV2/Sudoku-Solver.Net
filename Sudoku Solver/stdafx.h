@@ -16,10 +16,11 @@
 #define Property_ReadOnly($Type, $Variable, $Name) property $Type $Name { \
 	$Type get() { return this->$Variable; } } };
 
+using namespace System;
+
 namespace SudokuSolver
 {
-
-	//TODO add description
+	//DOLATER add description
 	generic <typename T>
 	delegate void ValueChangedEventHandler(T sender);
 }

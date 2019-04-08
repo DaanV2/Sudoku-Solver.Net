@@ -13,52 +13,63 @@ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
 WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
 ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.*/
+
 #pragma once
 
-#ifndef SudokuSolver_SudokuGrid_Class_Included
-#define SudokuSolver_SudokuGrid_Class_Included
+#ifndef SudokuSolver_DetermineCollection_Class_Included
+#define SudokuSolver_DetermineCollection_Class_Included
 
 #include "stdafx.h"
-#include "GridCell.h"
-#include "DetermineCollection.h"
 
 namespace SudokuSolver
 {
-	//DOLATER add description
-	public ref class SudokuGrid
+	generic<typename TypeItem>
+	public ref class DetermineCollection
 	{
 	private:
-		array<GridCell^, 2>^ hCells;
-		array<DetermineCollection<GridCell^>^, 1>^ hRows;
-		array<DetermineCollection<GridCell^>^, 1>^ hColumns;
-		array<DetermineCollection<GridCell^>^, 2>^ hBlocks;
+		array<TypeItem> ^ hItems;
 
 	public:
 		//DOLATER add description
-		SudokuGrid();
+		DetermineCollection();
 
 		//DOLATER add description
-		SudokuGrid(const SudokuGrid ^ Copy);
-		
+		DetermineCollection(const size_t & Size);
+
 		//DOLATER add description
-		property GridCell^ Cells[size_t, size_t]
+		DetermineCollection(array<TypeItem, 1>^ Items);
+
+		//DOLATER add description
+		Property(array<TypeItem>^, hItems, Items)
+
+		//DOLATER add description
+		property size_t Count
 		{
-			GridCell^ get(size_t R, size_t C)
+#ifdef ENVIRONMENT32
+			size_t get() { return (size_t)this->hItems->GetLength(0); }
+#else
+			size_t get() { return (size_t)this->hItems->GetLongLength(0); }
+#endif
+		}
+
+		//DOLATER add description
+		property TypeItem default[size_t]
+		{
+			TypeItem get(size_t Index)
 			{
-				return this->hCells[R, C];
+				return this->hItems[Index];
 			}
-			void set(size_t R, size_t C, GridCell^ value)
+			void set(size_t Index, TypeItem value)
 			{
-				this->hCells[R, C] = value;
+				this->hItems[Index] = value;
 			}
 		}
 
 		//DOLATER add description
-		inline void Set(const size_t & R, const size_t & C, GridCell ^ value);
-
+		void Set(const size_t & Index, TypeItem Item);
 		//DOLATER add description
-		inline GridCell ^ Get(const size_t & R, const size_t & C);
+		TypeItem Get(const size_t & Index);	
 	};
 }
 
-#endif //!SudokuSolver_SudokuGrid_Class_Included
+#endif //!SudokuSolver_GridCellCollection_Class_Included

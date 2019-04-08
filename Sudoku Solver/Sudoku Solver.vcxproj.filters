@@ -25,7 +25,7 @@
     <Filter Include="Classes\SudokuGrid">
       <UniqueIdentifier>{9e2081ed-bf8d-4b3e-9c45-864501c0f204}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\GridCellCollection">
+    <Filter Include="Classes\Determine Collection">
       <UniqueIdentifier>{3f8ee296-e74c-4c31-827e-1a327781908d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -42,11 +42,11 @@
     <ClInclude Include="SudokuGrid.h">
       <Filter>Classes\SudokuGrid</Filter>
     </ClInclude>
-    <ClInclude Include="GridCellCollection.h">
-      <Filter>Classes\GridCellCollection</Filter>
-    </ClInclude>
     <ClInclude Include="stdEnviroment.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DetermineCollection.h">
+      <Filter>Classes\Determine Collection</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -62,8 +62,8 @@
     <ClCompile Include="SudokuGrid.cpp">
       <Filter>Classes\SudokuGrid</Filter>
     </ClCompile>
-    <ClCompile Include="GridCellCollection.cpp">
-      <Filter>Classes\GridCellCollection</Filter>
+    <ClCompile Include="DetermineCollection.cpp">
+      <Filter>Classes\Determine Collection</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

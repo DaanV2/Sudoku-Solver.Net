@@ -17,4 +17,19 @@ namespace SudokuSolver
 
 		this->hValue = 0;
 	}
+	
+	GridCell::GridCell(const GridCell ^ Copy)
+	{
+		this->hCan1 = Copy->hCan1;
+		this->hCan2 = Copy->hCan2;
+		this->hCan3 = Copy->hCan3;
+		this->hCan4 = Copy->hCan4;
+		this->hCan5 = Copy->hCan5;
+		this->hCan6 = Copy->hCan6;
+		this->hCan7 = Copy->hCan7;
+		this->hCan8 = Copy->hCan8;
+		this->hCan9 = Copy->hCan9;
+
+		this->hValue = Copy->hValue;
+	}
 }

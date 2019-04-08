@@ -1,3 +1,18 @@
+/*ISC License
+
+Copyright (c) 2018, Daan Verstraten, daanverstraten@hotmail.com
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.*/
 #pragma once
 
 #ifndef SudokuSolver_GridCell_Class_Included
@@ -8,7 +23,7 @@
 
 namespace SudokuSolver
 {
-	//TODO add description
+	//DOLATER add description
 	public ref class GridCell
 	{
 	private:
@@ -25,34 +40,37 @@ namespace SudokuSolver
 		unsigned char hValue;
 
 	public:
-		//TODO add description
+		//DOLATER add description
 		GridCell();
 
-		//TODO add description
+		//DOLATER add description
+		GridCell(const GridCell ^ Copy);
+
+		//DOLATER add description
 		event ValueChangedEventHandler<GridCell^>^ ValueChanged;
-		//TODO add description
+		//DOLATER add description
 		event ValueChangedEventHandler<GridCell^>^ CanValueChanged;
 
-		//TODO add description
+		//DOLATER add description
 		Property_WithEvent(bool, hCan1, Can1, CanValueChanged)
-		//TODO add description
+		//DOLATER add description
 		Property_WithEvent(bool, hCan2, Can2, CanValueChanged)
-		//TODO add description
+		//DOLATER add description
 		Property_WithEvent(bool, hCan3, Can3, CanValueChanged)
-		//TODO add description
+		//DOLATER add description
 		Property_WithEvent(bool, hCan4, Can4, CanValueChanged)
-		//TODO add description
+		//DOLATER add description
 		Property_WithEvent(bool, hCan5, Can5, CanValueChanged)
-		//TODO add description
+		//DOLATER add description
 		Property_WithEvent(bool, hCan6, Can6, CanValueChanged)
-		//TODO add description
+		//DOLATER add description
 		Property_WithEvent(bool, hCan7, Can7, CanValueChanged)
-		//TODO add description
+		//DOLATER add description
 		Property_WithEvent(bool, hCan8, Can8, CanValueChanged)
-		//TODO add description
+		//DOLATER add description
 		Property_WithEvent(bool, hCan9, Can9, CanValueChanged)
 
-		//TODO add description
+		//DOLATER add description
 		property unsigned char Value
 		{
 			unsigned char get() { return this->hValue; }
