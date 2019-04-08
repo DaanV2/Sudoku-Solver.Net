@@ -48,6 +48,9 @@
     <ClInclude Include="DetermineCollection.h">
       <Filter>Classes\Determine Collection</Filter>
     </ClInclude>
+    <ClInclude Include="LockAbstract.h">
+      <Filter>Abstract Classes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp">
@@ -64,6 +67,9 @@
     </ClCompile>
     <ClCompile Include="DetermineCollection.cpp">
       <Filter>Classes\Determine Collection</Filter>
+    </ClCompile>
+    <ClCompile Include="LockAbstract.cpp">
+      <Filter>Abstract Classes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

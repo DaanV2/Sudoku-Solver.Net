@@ -218,6 +218,10 @@ copy "$(TargetDir)*" "$(SolutionDir)Releases\$(ProjectName)-$(PlatformName)\"
   <ItemGroup>
     <ClInclude Include="GridCell.h" />
     <ClInclude Include="DetermineCollection.h" />
+    <ClInclude Include="LockAbstract.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="stdEnviroment.h" />
@@ -227,6 +231,10 @@ copy "$(TargetDir)*" "$(SolutionDir)Releases\$(ProjectName)-$(PlatformName)\"
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="GridCell.cpp" />
     <ClCompile Include="DetermineCollection.cpp" />
+    <ClCompile Include="LockAbstract.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

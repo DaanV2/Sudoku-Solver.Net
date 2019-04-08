@@ -19,12 +19,13 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.*/
 #define SudokuSolver_GridCell_Class_Included
 
 #include "GridCell.h"
+#include "LockAbstract.h"
 #include "stdafx.h"
 
 namespace SudokuSolver
 {
 	//DOLATER add description
-	public ref class GridCell
+	public ref class GridCell : public LockAbstract
 	{
 	private:
 		bool hCan1;
