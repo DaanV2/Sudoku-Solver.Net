@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 //DOLATER prune namespace: DaanV2.Sudoku
 namespace DaanV2.Sudoku {
-    public partial class SudokuGrid {
-        ///DOLATER <summary></summary>
-        private SudokuCell[,] _Cells;
-
-        ///DOLATER <summary></summary>
-        private SudokuBlock[,] _Blocks;
+    public partial class SudokuBlock {
+        ///DOLATER <summary>/// </summary>
+        public SudokuCell[,] Cells { get => this._Cells; private set => this._Cells = value; }
     }
 }

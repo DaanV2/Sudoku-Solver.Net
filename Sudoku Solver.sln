@@ -23,9 +23,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku-Solver-API.Net", "Su
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku-Solver-API.Net Core", "Sudoku-Solver-API.Net Core\Sudoku-Solver-API.Net Core.csproj", "{AFA6F06C-9AD7-4A98-BEB3-7D0658F4816A}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Sudoku-Solver-API", "Sources\Sudoku-Solver-API\Sudoku-Solver-API.shproj", "{1EA37F04-4264-462D-A979-9DBDF98EA7CA}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Sources\Sudoku-Solver-API\Sudoku-Solver-API.projitems*{1ea37f04-4264-462d-a979-9dbdf98ea7ca}*SharedItemsImports = 13
+		Sources\Application\Application.projitems*{4efbc3bf-0cc7-490f-9346-c848413cbaa7}*SharedItemsImports = 4
 		Sources\Application\Application.projitems*{a2f9c6ba-bddf-4c9d-b764-8ea92e3762e1}*SharedItemsImports = 13
+		Sources\Sudoku-Solver-API\Sudoku-Solver-API.projitems*{d5aacf2d-ab49-4d09-8a26-f4acbb1c6b84}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +63,7 @@ Global
 		{A2F9C6BA-BDDF-4C9D-B764-8EA92E3762E1} = {DC00936E-5204-4B06-BCDC-813524027FC9}
 		{D5AACF2D-AB49-4D09-8A26-F4ACBB1C6B84} = {223E8ADE-04A8-4649-B4BA-4AE8D3162164}
 		{AFA6F06C-9AD7-4A98-BEB3-7D0658F4816A} = {223E8ADE-04A8-4649-B4BA-4AE8D3162164}
+		{1EA37F04-4264-462D-A979-9DBDF98EA7CA} = {DC00936E-5204-4B06-BCDC-813524027FC9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {56C03706-269B-4588-AF9E-8CB04C9536DE}

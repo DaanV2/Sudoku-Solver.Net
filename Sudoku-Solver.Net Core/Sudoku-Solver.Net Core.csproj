@@ -7,4 +7,10 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <Import Project="..\Sources\Application\Application.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sudoku-Solver-API.Net Core\Sudoku-Solver-API.Net Core.csproj" />
+  </ItemGroup>
+
 </Project>

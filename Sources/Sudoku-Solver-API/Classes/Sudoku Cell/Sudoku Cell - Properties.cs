@@ -103,6 +103,19 @@ namespace DaanV2.Sudoku {
             get => this._Determined;
             set {
                 this._Determined = value;
+
+                if (this._Determined) {
+                    this.Can1 = false;
+                    this.Can2 = false;
+                    this.Can3 = false;
+                    this.Can4 = false;
+                    this.Can5 = false;
+                    this.Can6 = false;
+                    this.Can7 = false;
+                    this.Can8 = false;
+                    this.Can9 = false;
+                }
+
                 this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(this.Determined)));
             }
         }
@@ -114,6 +127,17 @@ namespace DaanV2.Sudoku {
             set {
                 this._Value = value;
                 this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(this.Value)));
+            }
+        }
+
+        ///DOLATER <summary></summary>
+        [XmlIgnore]
+        public String DisplayValue {
+            get => this.Determined ? this.Value.ToString() : String.Empty;
+            set {
+                this.Value = (Int16)(Int16.Parse(value) % 10);
+                this.Determined = true;
+                this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(this.DisplayValue)));
             }
         }
     }

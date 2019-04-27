@@ -43,5 +43,6 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <Import Project="..\Sources\Sudoku-Solver-API\Sudoku-Solver-API.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

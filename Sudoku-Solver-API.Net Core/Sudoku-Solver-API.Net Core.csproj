@@ -5,4 +5,6 @@
     <RootNamespace>DaanV2.Sudoku</RootNamespace>
   </PropertyGroup>
 
+  <Import Project="..\Sources\Sudoku-Solver-API\Sudoku-Solver-API.projitems" Label="Shared" />
+
 </Project>

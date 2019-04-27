@@ -9,5 +9,53 @@
     <Import_RootNamespace>DaanV2.Sudoku</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)Usercontrols\Sudoku Block Control\SudokuBlockControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Usercontrols\Sudoku Cell Control\SudokuCellControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Usercontrols\Sudoku Grid Control\SudokuGridControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Windows\Main Window\MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Converter\Bool To Visibillty Converter\Bool To Visibillty Converter - IValueConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Usercontrols\Sudoku Block Control\SudokuBlockControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Usercontrols\Sudoku Cell Control\SudokuCellControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Usercontrols\Sudoku Grid Control\SudokuGridControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Windows\Main Window\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="D:\Mijn Projecten\Software\Git Hub\Sudoku-Solver.Net\Sources\Application\Usercontrols\Sudoku Block Control\SudokuBlockControl.xaml.cs">
+      <DependentUpon>SudokuBlockControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="D:\Mijn Projecten\Software\Git Hub\Sudoku-Solver.Net\Sources\Application\Usercontrols\Sudoku Cell Control\SudokuCellControl.xaml.cs">
+      <DependentUpon>SudokuCellControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="D:\Mijn Projecten\Software\Git Hub\Sudoku-Solver.Net\Sources\Application\Usercontrols\Sudoku Grid Control\SudokuGridControl.xaml.cs">
+      <DependentUpon>SudokuGridControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="D:\Mijn Projecten\Software\Git Hub\Sudoku-Solver.Net\Sources\Application\Usercontrols\SudokuCellControl.xaml.cs">
+      <DependentUpon>SudokuCellControl.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Converter\Bool To Visibillty Converter\" />
   </ItemGroup>
 </Project>

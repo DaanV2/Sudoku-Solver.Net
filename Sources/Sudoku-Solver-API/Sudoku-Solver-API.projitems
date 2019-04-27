@@ -6,8 +6,23 @@
     <SharedGUID>1ea37f04-4264-462d-a979-9dbdf98ea7ca</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>Sudoku_Solver_API</Import_RootNamespace>
+    <Import_RootNamespace>DaanV2.Sudoku</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\Sudoku Block\Sudoku Block - INotifyPropertyChanged.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\Sudoku Block\Sudoku Block - Set.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\Sudoku Cell\Sudoku Cell - ToString.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\Sudoku Cell\Sudoku Cell - Variable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\Sudoku Grid\Sudoku Grid - Initialize.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\Sudoku Grid\Sudoku Grid - Properties.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\Sudoku Grid\Sudoku Grid - INotifyPropertyChanged.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\Sudoku Grid\Sudoku Grid - Set.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\Sudoku Grid\Sudoku Grid - Variables.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\Sudoku Cell\Sudoku Cell - Initialize.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\Sudoku Cell\Sudoku Cell - Properties.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\Sudoku Cell\Sudoku Cell - INotifyPropertyChanged.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\Sudoku Block\Sudoku Block - Initialize.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\Sudoku Block\Sudoku Block - Properties.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\Sudoku Block\Sudoku Block - Variables.cs" />
   </ItemGroup>
 </Project>

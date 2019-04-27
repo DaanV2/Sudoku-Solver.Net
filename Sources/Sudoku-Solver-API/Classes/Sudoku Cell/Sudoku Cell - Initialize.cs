@@ -11,15 +11,15 @@ namespace DaanV2.Sudoku {
     public partial class SudokuCell {
         /// <summary>Creates a new instance of <see cref="SudokuCell"/></summary>
         public SudokuCell() {
-            this._Can1 = false;
-            this._Can2 = false;
-            this._Can3 = false;
-            this._Can4 = false;
-            this._Can5 = false;
-            this._Can6 = false;
-            this._Can7 = false;
-            this._Can8 = false;
-            this._Can9 = false;
+            this.Can1 = true;
+            this.Can2 = true;
+            this.Can3 = true;
+            this.Can4 = true;
+            this.Can5 = true;
+            this.Can6 = true;
+            this.Can7 = true;
+            this.Can8 = true;
+            this.Can9 = true;
             this.Determined = false;
             this.Value = -1;
         }

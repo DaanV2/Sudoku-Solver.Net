@@ -86,5 +86,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sudoku-Solver-API.Net\Sudoku-Solver-API.Net.csproj">
+      <Project>{d5aacf2d-ab49-4d09-8a26-f4acbb1c6b84}</Project>
+      <Name>Sudoku-Solver-API.Net</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="..\Sources\Application\Application.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
