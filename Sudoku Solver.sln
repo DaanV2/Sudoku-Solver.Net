@@ -1,39 +1,63 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.136
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sudoku Solver", "Sudoku Solver\Sudoku Solver.vcxproj", "{F4FF1107-BF7B-4E04-BE34-9A9EEDF60540}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "License", "License", "{2080809A-FF2E-4068-9B00-F40C6D59CFFF}"
 	ProjectSection(SolutionItems) = preProject
 		CHANGELOG.md = CHANGELOG.md
 		LICENSE.txt = LICENSE.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku-Solver.Net Core", "Sudoku-Solver.Net Core\Sudoku-Solver.Net Core.csproj", "{15B100F8-86F8-43A6-85B7-136383EDD7E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Output", "Output", "{223E8ADE-04A8-4649-B4BA-4AE8D3162164}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sources", "Sources", "{DC00936E-5204-4B06-BCDC-813524027FC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku-Solver.Net", "Sudoku-Solver.Net\Sudoku-Solver.Net.csproj", "{4EFBC3BF-0CC7-490F-9346-C848413CBAA7}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Application", "Sources\Application\Application.shproj", "{A2F9C6BA-BDDF-4C9D-B764-8EA92E3762E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku-Solver-API.Net", "Sudoku-Solver-API.Net\Sudoku-Solver-API.Net.csproj", "{D5AACF2D-AB49-4D09-8A26-F4ACBB1C6B84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku-Solver-API.Net Core", "Sudoku-Solver-API.Net Core\Sudoku-Solver-API.Net Core.csproj", "{AFA6F06C-9AD7-4A98-BEB3-7D0658F4816A}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Sources\Application\Application.projitems*{a2f9c6ba-bddf-4c9d-b764-8ea92e3762e1}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F4FF1107-BF7B-4E04-BE34-9A9EEDF60540}.Debug|Any CPU.ActiveCfg = Debug|Win32
-		{F4FF1107-BF7B-4E04-BE34-9A9EEDF60540}.Debug|x64.ActiveCfg = Debug|x64
-		{F4FF1107-BF7B-4E04-BE34-9A9EEDF60540}.Debug|x64.Build.0 = Debug|x64
-		{F4FF1107-BF7B-4E04-BE34-9A9EEDF60540}.Debug|x86.ActiveCfg = Debug|Win32
-		{F4FF1107-BF7B-4E04-BE34-9A9EEDF60540}.Debug|x86.Build.0 = Debug|Win32
-		{F4FF1107-BF7B-4E04-BE34-9A9EEDF60540}.Release|Any CPU.ActiveCfg = Release|Win32
-		{F4FF1107-BF7B-4E04-BE34-9A9EEDF60540}.Release|x64.ActiveCfg = Release|x64
-		{F4FF1107-BF7B-4E04-BE34-9A9EEDF60540}.Release|x64.Build.0 = Release|x64
-		{F4FF1107-BF7B-4E04-BE34-9A9EEDF60540}.Release|x86.ActiveCfg = Release|Win32
-		{F4FF1107-BF7B-4E04-BE34-9A9EEDF60540}.Release|x86.Build.0 = Release|Win32
+		{15B100F8-86F8-43A6-85B7-136383EDD7E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B100F8-86F8-43A6-85B7-136383EDD7E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B100F8-86F8-43A6-85B7-136383EDD7E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B100F8-86F8-43A6-85B7-136383EDD7E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EFBC3BF-0CC7-490F-9346-C848413CBAA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EFBC3BF-0CC7-490F-9346-C848413CBAA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EFBC3BF-0CC7-490F-9346-C848413CBAA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EFBC3BF-0CC7-490F-9346-C848413CBAA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5AACF2D-AB49-4D09-8A26-F4ACBB1C6B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5AACF2D-AB49-4D09-8A26-F4ACBB1C6B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5AACF2D-AB49-4D09-8A26-F4ACBB1C6B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5AACF2D-AB49-4D09-8A26-F4ACBB1C6B84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFA6F06C-9AD7-4A98-BEB3-7D0658F4816A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFA6F06C-9AD7-4A98-BEB3-7D0658F4816A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFA6F06C-9AD7-4A98-BEB3-7D0658F4816A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFA6F06C-9AD7-4A98-BEB3-7D0658F4816A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{15B100F8-86F8-43A6-85B7-136383EDD7E8} = {223E8ADE-04A8-4649-B4BA-4AE8D3162164}
+		{4EFBC3BF-0CC7-490F-9346-C848413CBAA7} = {223E8ADE-04A8-4649-B4BA-4AE8D3162164}
+		{A2F9C6BA-BDDF-4C9D-B764-8EA92E3762E1} = {DC00936E-5204-4B06-BCDC-813524027FC9}
+		{D5AACF2D-AB49-4D09-8A26-F4ACBB1C6B84} = {223E8ADE-04A8-4649-B4BA-4AE8D3162164}
+		{AFA6F06C-9AD7-4A98-BEB3-7D0658F4816A} = {223E8ADE-04A8-4649-B4BA-4AE8D3162164}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {56C03706-269B-4588-AF9E-8CB04C9536DE}
