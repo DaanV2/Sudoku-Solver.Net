@@ -1,1 +1,0 @@
-git log --decorate=full --since="10 day ago" --format=" * %%s (%%h)%%n    by %%an, at %%aD%%n" > CHANGELOG.md
