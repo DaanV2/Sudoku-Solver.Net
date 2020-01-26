@@ -3,8 +3,12 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <RootNamespace>DaanV2.Sudoku</RootNamespace>
+    <AssemblyName>Sudoku-Solver-API.Net</AssemblyName>
   </PropertyGroup>
 
-  <Import Project="..\Sources\Sudoku-Solver-API\Sudoku-Solver-API.projitems" Label="Shared" />
+  <ItemGroup>
+    <PackageReference Include="Config-Handling.Net" Version="1.0.6" />
+    <PackageReference Include="DaanV2.Essentials.Net" Version="1.0.5" />
+  </ItemGroup>
 
 </Project>

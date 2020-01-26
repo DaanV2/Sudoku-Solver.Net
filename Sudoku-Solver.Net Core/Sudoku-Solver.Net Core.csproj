@@ -7,10 +7,17 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-  <Import Project="..\Sources\Application\Application.projitems" Label="Shared" />
-
   <ItemGroup>
     <ProjectReference Include="..\Sudoku-Solver-API.Net Core\Sudoku-Solver-API.Net Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Windows\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Config-Handling.Net" Version="1.0.6" />
+    <PackageReference Include="DaanV2.Essentials.Net" Version="1.0.5" />
   </ItemGroup>
 
 </Project>
